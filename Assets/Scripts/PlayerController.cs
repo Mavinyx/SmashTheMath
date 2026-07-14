@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     //função para controlar o movimento do jogador
     void MovimentoPlayer()
     {
-           float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         corpo.linearVelocity = new Vector2(moveHorizontal * vel, moveVertical * vel);
         anim.SetFloat("speed", Mathf.Abs(moveHorizontal)); // Update animation speed based on horizontal movement
@@ -82,11 +82,11 @@ public class PlayerController : MonoBehaviour
 
         if (moveHorizontal > 0)
         {
-            sprite.flipX = false; // Facing right
+            sprite.flipX = false; 
         }
         else if (moveHorizontal < 0)
         {
-            sprite.flipX = true; // Facing left
+            sprite.flipX = true; 
         }
     }
 }

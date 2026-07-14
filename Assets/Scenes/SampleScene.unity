@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 292558091}
   - component: {fileID: 292558090}
   - component: {fileID: 292558092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ MonoBehaviour:
   attackArea: {fileID: 360291464}
   camadaInimigo:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 128
 --- !u!50 &292558091
 Rigidbody2D:
   serializedVersion: 5
@@ -373,7 +373,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -387,7 +387,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &292558092
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -434,7 +434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 360291464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: attackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,8 +450,8 @@ Transform:
   m_GameObject: {fileID: 360291463}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.129, y: -0.164, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.129, y: -0.189, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 292558089}
@@ -769,7 +769,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e34d99cc613514342929a51fea8b021d, type: 2}
+  - {fileID: 2100000, guid: e6b89b9dd7d3c9d449256aae10162184, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14645,13 +14645,13 @@ GameObject:
   - component: {fileID: 629480304}
   - component: {fileID: 629480303}
   - component: {fileID: 629480308}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Mush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &629480303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14703,7 +14703,7 @@ Animator:
   m_GameObject: {fileID: 629480302}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6136aff041ebb44438e57e6b2b9c6ef6, type: 2}
+  m_Controller: {fileID: 9100000, guid: ab78a22b245c47a4096b4b4cbac655f0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
